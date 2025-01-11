@@ -57,13 +57,13 @@ body {
   padding: 3rem;
 }
 
-.heading__title {
+.heading__primary {
   text-transform: uppercase;
   color: #fff;
   backface-visibility: hidden;
   margin-bottom: 4.8rem;
 }
-.heading__title--main {
+.heading__primary--main {
   display: block;
   font-size: 3.5rem;
   letter-spacing: 3.5rem;
@@ -72,12 +72,36 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-in;
 }
-.heading__title--sub {
+.heading__primary--sub {
   display: block;
   font-size: 1.6rem;
   letter-spacing: 1.23rem;
   font-weight: 700;
   animation: moveInRight 1s ease-in;
+}
+
+.heading__secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+.heading__secondary:hover {
+  transform: skewY(2deg) skewX(20deg) scale(1.1);
+  text-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
 }
 
 .btn:link, .btn:visited {
@@ -131,7 +155,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
 .header__logo-box {
@@ -148,6 +172,34 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.section-about {
+  padding: 25rem 0;
+  background-color: #f7f7f7;
+  margin-top: -20vh;
 }
 
 /*# sourceMappingURL=style.css.map */
