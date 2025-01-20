@@ -1,7 +1,6 @@
 .btn {
   &:link,
   &:visited {
-    color: $color-gray;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -27,9 +26,17 @@
   }
 
   &--light {
+    color: $color-gray;
     background-color: $color-light;
     &::after {
       background-color: $color-light;
+    }
+  }
+  &--primary {
+    background-color: $color-primary;
+    color: $color-light;
+    &::after {
+      background-color: $color-primary;
     }
   }
 
