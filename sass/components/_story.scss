@@ -18,13 +18,41 @@
     transform: translateX(-3rem) skewX(12deg);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+
+    position: relative;
   }
 
   &__image {
     height: 100%;
+    transform: translateX(-4rem) scale(1.3);
+    transition: all 0.3s;
   }
 
   &__text {
     transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    opacity: 0;
+    transition: all ease 0.3s;
+    color: $color-light;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(6px) brightness(80%);
   }
 }
