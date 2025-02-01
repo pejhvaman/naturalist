@@ -31,3 +31,31 @@
   padding: 15rem 0;
   position: relative;
 }
+
+.section-book {
+  padding: 12rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary
+  );
+
+  .book {
+    background-image: linear-gradient(
+        105deg,
+        $color-light 0%,
+        $color-light 50%,
+        transparent 50%
+      ),
+      url(/img/nat-10.jpg);
+    background-size: cover;
+    border-radius: 3px;
+
+    height: 50rem; // temp
+
+    &__form {
+      width: 50%;
+      padding: 5rem;
+    }
+  }
+}

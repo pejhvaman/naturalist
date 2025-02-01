@@ -82,11 +82,11 @@ body {
 
 .heading__secondary {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: 700;
   display: inline-block;
   letter-spacing: 2px;
-  background-image: linear-gradient(to right, #55c57a, #28b485);
+  background-image: linear-gradient(to right, #219ebc, #1f657f);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -157,11 +157,11 @@ body {
   background-color: #fff;
 }
 .btn--primary {
-  background-color: #7ed56f;
+  background-color: #3cb9d4;
   color: #fff;
 }
 .btn--primary::after {
-  background-color: #7ed56f;
+  background-color: #3cb9d4;
 }
 .btn::after {
   content: "";
@@ -182,10 +182,10 @@ body {
 
 .button-text:link, .button-text:visited {
   text-decoration: none;
-  color: #28b485;
+  color: #1f657f;
   font-size: 1.6rem;
   display: inline-block;
-  border-bottom: 1px solid #28b485;
+  border-bottom: 1px solid #1f657f;
   transition: all 0.2s;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
@@ -193,7 +193,7 @@ body {
 }
 .button-text:hover {
   color: #fff;
-  background-color: #28b485;
+  background-color: #1f657f;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
@@ -230,7 +230,7 @@ body {
   z-index: 20;
   transform: translateY(-1rem) scale(1.05);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
-  outline: 1.5rem solid #7ed56f;
+  outline: 1.5rem solid #3cb9d4;
 }
 .composition:hover .composition__image:not(:hover) {
   transform: scale(0.95);
@@ -253,7 +253,7 @@ body {
 .section-features__icon {
   font-size: 6rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #55c57a, #28b485);
+  background-image: linear-gradient(to right, #219ebc, #1f657f);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -284,13 +284,13 @@ body {
   transform: rotateY(180deg);
 }
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 120, 0, 0.8), rgba(223, 107, 6, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(224, 122, 95, 0.8), rgba(202, 87, 56, 0.8));
 }
 .card__side--back-2 {
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(33, 158, 188, 0.8), rgba(31, 101, 127, 0.8));
 }
 .card__side--back-3 {
-  background-image: linear-gradient(to right bottom, rgba(33, 158, 188, 0.8), rgba(13, 135, 165, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(58, 173, 96, 0.8), rgba(42, 143, 76, 0.8));
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -305,13 +305,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card__picture--1 {
-  background-image: url("../img/nat-5.jpg"), linear-gradient(to right bottom, rgba(255, 120, 0, 0.8), rgba(223, 107, 6, 0.8));
+  background-image: url("../img/nat-5.jpg"), linear-gradient(to right bottom, rgba(224, 122, 95, 0.8), rgba(202, 87, 56, 0.8));
 }
 .card__picture--2 {
-  background-image: url("../img/nat-6.jpg"), linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
+  background-image: url("../img/nat-6.jpg"), linear-gradient(to right bottom, rgba(33, 158, 188, 0.8), rgba(31, 101, 127, 0.8));
 }
 .card__picture--3 {
-  background-image: url("../img/nat-7.jpg"), linear-gradient(to right bottom, rgba(33, 158, 188, 0.8), rgba(13, 135, 165, 0.8));
+  background-image: url("../img/nat-7.jpg"), linear-gradient(to right bottom, rgba(58, 173, 96, 0.8), rgba(42, 143, 76, 0.8));
 }
 .card__heading {
   font-size: 2.5rem;
@@ -329,13 +329,13 @@ body {
   box-decoration-break: clone;
 }
 .card__heading--span-1 {
-  background-image: linear-gradient(to right, rgba(255, 120, 0, 0.8), rgba(223, 107, 6, 0.8));
+  background-image: linear-gradient(to right, rgba(224, 122, 95, 0.8), rgba(202, 87, 56, 0.8));
 }
 .card__heading--span-2 {
-  background-image: linear-gradient(to right, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
+  background-image: linear-gradient(to right, rgba(33, 158, 188, 0.8), rgba(31, 101, 127, 0.8));
 }
 .card__heading--span-3 {
-  background-image: linear-gradient(to right, rgba(33, 158, 188, 0.8), rgba(13, 135, 165, 0.8));
+  background-image: linear-gradient(to right, rgba(58, 173, 96, 0.8), rgba(42, 143, 76, 0.8));
 }
 .card__details {
   padding: 2rem;
@@ -437,9 +437,51 @@ body {
   object-fit: cover;
 }
 
+.form__group {
+  padding-bottom: 1rem;
+}
+.form__input {
+  width: 90%;
+  display: block;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: rgba(247, 247, 247, 0.4);
+  border-radius: 2px;
+}
+.form__input:focus {
+  background: #f7f7f7;
+  outline: none;
+  border-bottom: 3px solid #3cb9d4;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+.form__input::placeholder {
+  color: rgba(119, 119, 119, 0.5);
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid #e07a5f;
+}
+.form__label {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+  opacity: 100;
+  visibility: visible;
+  transform: translateY(0);
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(60, 185, 212, 0.7), rgba(31, 101, 127, 0.7)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -496,7 +538,7 @@ body {
 }
 
 .section-features {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(60, 185, 212, 0.7), rgba(31, 101, 127, 0.7)), url(../img/nat-4.jpg);
   background-size: cover;
   padding: 20rem 0;
   transform: skewY(-7deg);
@@ -515,6 +557,21 @@ body {
 .section-story {
   padding: 15rem 0;
   position: relative;
+}
+
+.section-book {
+  padding: 12rem;
+  background-image: linear-gradient(to right bottom, #219ebc, #3cb9d4);
+}
+.section-book .book {
+  background-image: linear-gradient(105deg, #fff 0%, #fff 50%, transparent 50%), url(/img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  height: 50rem;
+}
+.section-book .book__form {
+  width: 50%;
+  padding: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
