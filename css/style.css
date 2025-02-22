@@ -112,22 +112,22 @@ body {
 }
 
 .u-text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -136,6 +136,8 @@ body {
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
   position: relative;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -145,7 +147,9 @@ body {
   transform: scaleY(1.8) scaleX(1.6);
   opacity: 0;
 }
-.btn:active {
+.btn:active, .btn:focus {
+  outline-color: #3cb9d4;
+  outline-offset: 0.5rem;
   transform: translateY(-1px);
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
@@ -440,6 +444,10 @@ body {
 .form__group {
   padding-bottom: 1rem;
 }
+.form__group--radio {
+  width: 49%;
+  display: inline-block;
+}
 .form__input {
   width: 90%;
   display: block;
@@ -449,8 +457,9 @@ body {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  background: rgba(247, 247, 247, 0.4);
+  background: rgba(247, 247, 247, 0.9);
   border-radius: 2px;
+  transition: all 0.3s;
 }
 .form__input:focus {
   background: #f7f7f7;
@@ -477,6 +486,42 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
+}
+.form__radio {
+  display: none;
+}
+.form__radio--label {
+  font-size: 1.6rem;
+  padding-left: 4rem;
+  cursor: pointer;
+  position: relative;
+}
+.form__radio--button {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  border: 0.5rem solid #3cb9d4;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+}
+.form__radio--button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #3cb9d4;
+  border-radius: 50%;
+  opacity: 0;
+}
+.form__radio:checked + .form__radio--label .form__radio--button::after {
+  opacity: 1;
 }
 
 .header {
@@ -564,7 +609,7 @@ body {
   background-image: linear-gradient(to right bottom, #219ebc, #3cb9d4);
 }
 .section-book .book {
-  background-image: linear-gradient(105deg, #fff 0%, #fff 50%, transparent 50%), url(/img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/img/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
   height: 50rem;

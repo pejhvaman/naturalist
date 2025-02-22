@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-decoration: none;
@@ -9,6 +10,9 @@
     box-shadow: 0 0.4rem 0.4rem rgba($color-dark, 0.2);
     transition: all 0.2s ease;
     position: relative;
+
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -20,7 +24,10 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline-color: $color-primary;
+    outline-offset: 0.5rem;
     transform: translateY(-1px);
     box-shadow: 0 0.2rem 0.2rem rgba($color-dark, 0.2);
   }
