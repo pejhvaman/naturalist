@@ -68,7 +68,9 @@
           <span class="heading__primary--main">Naturalist</span>
           <span class="heading__primary--sub">is a healthy one!</span>
         </h1>
-        <a href="#" class="btn btn--light btn--animated">Discover tours</a>
+        <a href="#section-tours" class="btn btn--light btn--animated"
+          >Discover tours</a
+        >
       </div>
     </header>
     <main>
@@ -170,7 +172,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-text-center u-margin-bottom-big">
           <h2 class="heading__secondary">Find your favorite tour plan</h2>
         </div>
@@ -199,7 +201,7 @@
                   <div class="card__price-box--only">only</div>
                   <div class="card__price-box--value">$345</div>
                   <div class="card__cta">
-                    <a href="#" class="btn btn--light">Book now!</a>
+                    <a href="#popup" class="btn btn--light">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -229,7 +231,7 @@
                   <div class="card__price-box--only">only</div>
                   <div class="card__price-box--value">$345</div>
                   <div class="card__cta">
-                    <a href="#" class="btn btn--light">Book now!</a>
+                    <a href="#popup" class="btn btn--light">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -259,7 +261,7 @@
                   <div class="card__price-box--only">only</div>
                   <div class="card__price-box--value">$345</div>
                   <div class="card__cta">
-                    <a href="#" class="btn btn--light">Book now!</a>
+                    <a href="#popup" class="btn btn--light">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -434,13 +436,14 @@
         </div>
       </div>
     </footer>
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
           <img src="./img/nat-8.jpg" alt="Natur Photo" class="popup__img" />
           <img src="./img/nat-9.jpg" alt="Nature Photo" class="popup__img" />
         </div>
         <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
           <h2 class="heading__secondary u-margin-bottom-small">
             Start Booking Now
           </h2>
