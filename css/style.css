@@ -637,6 +637,7 @@ body {
   z-index: 2000;
   cursor: pointer;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .navigation__background {
   position: fixed;
@@ -698,6 +699,39 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 100;
   width: 100%;
+}
+.navigation__icon {
+  position: relative;
+  margin-top: 3.2rem;
+}
+.navigation__icon, .navigation__icon::after, .navigation__icon::before {
+  width: 3rem;
+  height: 2px;
+  display: inline-block;
+  background-color: #777;
+  transition: all 0.3s;
+}
+.navigation__icon::after, .navigation__icon::before {
+  content: "";
+  left: 0;
+  position: absolute;
+}
+.navigation__icon::after {
+  top: 0.8rem;
+}
+.navigation__icon::before {
+  top: -0.8rem;
+}
+.navigation__checkbox:checked + .navigation__label .navigation__icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__label .navigation__icon:after {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation__checkbox:checked + .navigation__label .navigation__icon:before {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 .section-about {
